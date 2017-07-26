@@ -3,7 +3,7 @@ output: github_document
 ---
 
 <!-- 
-  README.md is generated from README.Rmd, so you should edit that       file 
+  README.md is generated from README.Rmd, so you should edit that file.
 -->
 
 ```{r, echo = FALSE}
