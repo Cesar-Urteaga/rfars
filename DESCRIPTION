@@ -1,0 +1,19 @@
+Package: rfars
+Version: 0.1.0
+Title: Functions to analize the US census of fatal crash vehicle injuries
+Author@R: person("Cesar", "Urteaga", email = "noemail@no-reply.com", 
+                                     role  = c("aut", "cre"))
+Description: More about what it does (maybe more than one line)
+    Use four spaces when indenting paragraphs within the Description.
+Depends:
+    R (>= 3.4.1)
+Imports:
+    dplyr,
+    graphics,
+    magrittr,
+    maps,
+    readr,
+    tidyr
+License: What license is it under?
+Encoding: UTF-8
+LazyData: true
