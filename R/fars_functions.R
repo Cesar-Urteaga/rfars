@@ -60,7 +60,7 @@ make_filename <- function(year) {
 #'    object with the data of car fatalities by month for each year in the
 #'    specified period.
 #' @export
-#' @importFrom dplyr mutate select
+#' @importFrom dplyr mutate select %>%
 #' @section Warning:
 #'    Provided that a file does not exist for a specific year, the function will
 #'    throw a warning that the information was not read.

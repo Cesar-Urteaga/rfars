@@ -1,7 +1,0 @@
-importFrom("dplyr", "bind_rows", "filter", "group_by",
-           "mutate", "select", "summarize", "tbl_df")
-importFrom("graphics", "points")
-importFrom("magrittr", "%>%")
-importFrom("maps", "map")
-importFrom("readr", "read_csv")
-importFrom("tidyr", "spread")
