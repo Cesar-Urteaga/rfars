@@ -14,3 +14,4 @@ In order to create this package, I followed the following steps:
 2.  Fill the DESCRIPTION file with the information of your package.
 3.  Document the code in the folder [R](./R) with roxygent2-style documentation.
 4.  Delete the NAMESPACE file when you created the package's project and allow that `devtools` creates this file with the function `document()`.
+
