@@ -27,13 +27,13 @@ This vignettes documents what is the `rfars` package and how should be used.
 
 ## Description
 
-The `rfars` package bundle a set of functions to analyze the the data from the US National Highway Traffic Safety Administration's [Fatality Analysis Reporting System (FARS)](https://www.nhtsa.gov/research-data/fatality-analysis-reporting-system-fars).
+The `rfars` package bundles a set of functions to analyze the data from the US National Highway Traffic Safety Administration's [Fatality Analysis Reporting System (FARS)](https://www.nhtsa.gov/research-data/fatality-analysis-reporting-system-fars).
 
 ## Usage
 
 ### Getting the data into a more manageable format
 
-The function `fars_read` allows to extract the data, which is in a compress format (i.e., `.bz2`), into a tibble object.  
+The function `fars_read` allows you to extract the data from a compressed format (`.bz2`) into a tibble object.  
 
 ```{r ExtractFarsData}
 # Extract the data from the compressed file.
@@ -44,14 +44,14 @@ head(data_2013)
 
 ### Summarizing the car fatalities
 
-In order to get the number of fatalities by month use the `fars_summarize_years`.
+In order to get the total number of fatalities by month use the `fars_summarize_years`.
 
 ```{r}
 # Creates a table by month & year with the number of fatalities in 2013 y 2014.
 fars_summarize_years(c(2013, 2014))
 ```
 
-### Visualizing the car fatalities.
+### Visualizing the car fatalities by state
 
 The function `fars_map_state` creates a map with the car fatalities in a US state and a specific year.
 
