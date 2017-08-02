@@ -12,9 +12,9 @@ fars_map_state(state.num, year)
 \item{year}{A numeric vector representing the years in a time period.}
 }
 \description{
-It plots in a map the car fatalities occurred in a US state and in a specific
-year using the data reported by the US National Highway Traffic Safety
-Administration in the Fatality Analysis Reporting System.
+It plots, in a map, the car fatalities occurred in a given US state and in a
+specific year using the data reported by the US National Highway Traffic
+Safety Administration in the Fatality Analysis Reporting System.
 }
 \section{Warning}{
 

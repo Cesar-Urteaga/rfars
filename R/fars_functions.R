@@ -37,7 +37,6 @@ fars_read <- function(filename) {
 #' @param year A numeric vector representing the years in a time period.
 #' @return A character vector corresponding to the data filenames specified in
 #'    the time period.
-#' @export
 #' @section Warning:
 #'    If the \code{year} parameter cannot be coerced as an integer, the function
 #'    will throw a warning that the information will not be read.
@@ -59,7 +58,6 @@ make_filename <- function(year) {
 #' @return A \href{https://blog.rstudio.org/2016/03/24/tibble-1-0-0/}{tibble}
 #'    object with the data of car fatalities by month for each year in the
 #'    specified period.
-#' @export
 #' @importFrom dplyr mutate select %>%
 #' @section Warning:
 #'    Provided that a file does not exist for a specific year, the function will
@@ -114,9 +112,9 @@ fars_summarize_years <- function(years) {
 
 #' Plots the car fatalities in a US state and in a specific year.
 #'
-#' It plots in a map the car fatalities occurred in a US state and in a specific
-#' year using the data reported by the US National Highway Traffic Safety
-#' Administration in the Fatality Analysis Reporting System.
+#' It plots, in a map, the car fatalities occurred in a given US state and in a
+#' specific year using the data reported by the US National Highway Traffic
+#' Safety Administration in the Fatality Analysis Reporting System.
 #'
 #' @param state.num An integer value corresponding to a US state.
 #' @inheritParams make_filename
@@ -134,7 +132,6 @@ fars_map_state <- function(state.num, year) {
         filename <- make_filename(year)
         data <- fars_read(filename)
         state.num <- as.integer(state.num)
-
         if(!(state.num %in% unique(data$STATE)))
                 stop("invalid STATE number: ", state.num)
         data.sub <- dplyr::filter(data, STATE == state.num)
