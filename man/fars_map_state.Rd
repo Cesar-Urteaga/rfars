@@ -24,5 +24,9 @@ Safety Administration in the Fatality Analysis Reporting System.
 }
 
 \examples{
+# We set the working directory where the compressed files are stored within
+# the package.
+WD <- setwd(system.file("extdata", package = "rfars"))
 fars_map_state(12, 2015)
+setwd(WD)
 }

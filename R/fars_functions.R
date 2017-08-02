@@ -17,8 +17,11 @@
 #' @section Warning:
 #'    Provided that the file does not exist, the function will throw an error.
 #' @examples
-#' # Given that compressed file is in the working directory.
+#' # We set the working directory where the compressed files are stored within
+#' # the package.
+#' WD <- setwd(system.file("extdata", package = "rfars"))
 #' fars_read("accident_2013.csv.bz2")
+#' setwd(WD)
 fars_read <- function(filename) {
         if(!file.exists(filename))
                 stop("file '", filename, "' does not exist")
@@ -37,11 +40,16 @@ fars_read <- function(filename) {
 #' @param year A numeric vector representing the years in a time period.
 #' @return A character vector corresponding to the data filenames specified in
 #'    the time period.
+#' @export
 #' @section Warning:
 #'    If the \code{year} parameter cannot be coerced as an integer, the function
 #'    will throw a warning that the information will not be read.
 #' @examples
+#' # We set the working directory where the compressed files are stored within
+#' # the package.
+#' WD <- setwd(system.file("extdata", package = "rfars"))
 #' make_filename(2013)
+#' setwd(WD)
 make_filename <- function(year) {
         year <- as.integer(year)
         sprintf("accident_%d.csv.bz2", year)
@@ -58,15 +66,20 @@ make_filename <- function(year) {
 #' @return A \href{https://blog.rstudio.org/2016/03/24/tibble-1-0-0/}{tibble}
 #'    object with the data of car fatalities by month for each year in the
 #'    specified period.
+#' @export
 #' @importFrom dplyr mutate select %>%
 #' @section Warning:
 #'    Provided that a file does not exist for a specific year, the function will
 #'    throw a warning that the information was not read.
 #' @examples
+#' # We set the working directory where the compressed files are stored within
+#' # the package.
+#' WD <- setwd(system.file("extdata", package = "rfars"))
 #' # Data with the car fatalities in 2013.
 #' fars_read_years(2013)
 #' # Data with the car fatalities in 2013 and 2014.
 #' fars_read_years(c(2013, 2014))
+#' setwd(WD)
 fars_read_years <- function(years) {
         lapply(years, function(year) {
                 file <- make_filename(year)
@@ -98,10 +111,14 @@ fars_read_years <- function(years) {
 #'    Provided that a file does not exist for a specific year, the function will
 #'    throw a warning that the information does not exist.
 #' @examples
+#' # We set the working directory where the compressed files are stored within
+#' # the package.
+#' WD <- setwd(system.file("extdata", package = "rfars"))
 #' # Summary with the tallies of car fatalities in 2013.
 #' fars_summarize_years(2013)
 #' # Summary with the tallies of car fatalities in 2013 and 2014.
 #' fars_summarize_years(c(2013, 2014))
+#' setwd(WD)
 fars_summarize_years <- function(years) {
         dat_list <- fars_read_years(years)
         dplyr::bind_rows(dat_list) %>%
@@ -127,7 +144,11 @@ fars_summarize_years <- function(years) {
 #'    information specified in the \code{year} parameter does not exist, the
 #'    function will throw an error.
 #' @examples
+#' # We set the working directory where the compressed files are stored within
+#' # the package.
+#' WD <- setwd(system.file("extdata", package = "rfars"))
 #' fars_map_state(12, 2015)
+#' setwd(WD)
 fars_map_state <- function(state.num, year) {
         filename <- make_filename(year)
         data <- fars_read(filename)

@@ -27,8 +27,12 @@ return a variable (MONTH) in the dataset.
 }
 
 \examples{
+# We set the working directory where the compressed files are stored within
+# the package.
+WD <- setwd(system.file("extdata", package = "rfars"))
 # Data with the car fatalities in 2013.
 fars_read_years(2013)
 # Data with the car fatalities in 2013 and 2014.
 fars_read_years(c(2013, 2014))
+setwd(WD)
 }

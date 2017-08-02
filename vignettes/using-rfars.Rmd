@@ -9,13 +9,17 @@ vignette: >
   %\VignetteEncoding{UTF-8}
 ---
 
-```{r, include = FALSE}
+```{r Setup, include = FALSE}
 knitr::opts_chunk$set(# Collapse output blocks
                       collapse = TRUE, 
                       comment = "#>", 
                       fig.width = 7, 
                       fig.height = 7, 
                       fig.align = "center")
+# We set the working directory where the compressed files are stored within the
+# package.
+WD <- system.file("extdata", package = "rfars")
+knitr::opts_knit$set(root.dir = WD)
 library(rfars)
 ```
 

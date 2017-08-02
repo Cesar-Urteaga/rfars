@@ -26,8 +26,12 @@ Analysis Reporting System for a specific period.
 }
 
 \examples{
+# We set the working directory where the compressed files are stored within
+# the package.
+WD <- setwd(system.file("extdata", package = "rfars"))
 # Summary with the tallies of car fatalities in 2013.
 fars_summarize_years(2013)
 # Summary with the tallies of car fatalities in 2013 and 2014.
 fars_summarize_years(c(2013, 2014))
+setwd(WD)
 }

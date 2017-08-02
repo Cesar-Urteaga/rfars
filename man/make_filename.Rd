@@ -25,5 +25,9 @@ a specific year.
 }
 
 \examples{
+# We set the working directory where the compressed files are stored within
+# the package.
+WD <- setwd(system.file("extdata", package = "rfars"))
 make_filename(2013)
+setwd(WD)
 }

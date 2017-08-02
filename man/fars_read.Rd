@@ -30,6 +30,9 @@ The function uses the algorithm of the \code{\link[readr]{read_csv}}
 }
 
 \examples{
-# Given that compressed file is in the working directory.
+# We set the working directory where the compressed files are stored within
+# the package.
+WD <- setwd(system.file("extdata", package = "rfars"))
 fars_read("accident_2013.csv.bz2")
+setwd(WD)
 }
