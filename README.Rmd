@@ -15,6 +15,18 @@ knitr::opts_chunk$set(comment  = NA,
 
 [![Travis Build Status](https://travis-ci.org/Cesar-Urteaga/rfars.svg?branch=master)](https://travis-ci.org/Cesar-Urteaga/rfars)
 
+## Overview
+
+rfars is package with a set of functions that makes easier to analyze the data from the US National Highway Traffic Safety Administration's Fatality Analysis Reporting System (FARS).
+
+## Installation
+
+```{r, eval = FALSE}
+# Install the package from GitHub:
+devtools::install_github("Cesar-Urteaga/rfars")
+```
+
+
 ## Purpose
 
 The aim of this project was to mingle the skills of creating, writing, and testing an R package using the R files provided in the course [Building R Packages](https://www.coursera.org/learn/r-packages) offered by the Johns Hopkins University through the Coursera's platform.
@@ -38,6 +50,6 @@ In order to create this package, I followed the next steps:
 5. If you want to create an Rmarkdown vignette, use the function `devtools::use_vignette("vignette-name")`; then, modify the vignette and press Ctrl/Cmd + Shift + K to knit it.
 6. You can distribute the documentation in pdf format executing the command `R CMD Rd2pdf package_name` in the parent folder of the package.
 7. In case you want to include external data (e.g., `.bz2` files), you should store it in the [inst\\extdata](./inst/extdata) folder (please refer to the section of [raw data](http://r-pkgs.had.co.nz/data.html#data-extdata) of the book "R packages" by *Hadley Wickham*); moreover, use the function `system.file` to know where the external files are stored once the package is installed (see the examples in the documentation).
-8. So as to include a battery of test, run the command `devtools::use_testthat()` and include the tests in the [testthat](./tests/testhat) folder.  Once you have added the tests, execute `devtools::test()` to perform each one.  Please review the chapter of [testing](http://r-pkgs.had.co.nz/tests.html) in the Hadley's book. 
+8. So as to include a battery of test, run the command `devtools::use_testthat()` and include the tests in the [testthat](./tests/testthat) folder.  Once you have added the tests, execute `devtools::test()` to perform each one.  Please review the chapter of [testing](http://r-pkgs.had.co.nz/tests.html) in the Hadley's book. 
 9. To check if your package pass the CRAN's battery of tests, click the `Check` button in the `Build` tab of `RStudio`.  N.B.: It is possible that you could get the following note: "no visible binding for global variable [variable name]".  To get around of it, see the [suggested solution](https://stackoverflow.com/a/17807914) in stackoverflow.
-10. Finally, to use the continuous integration service of Travis, run `devtools::use_travis()` and activate the package's repository in your Travis account; then, add, commit, and push your changes in Github.
+10. Finally, to use the continuous integration service of Travis, run `devtools::use_travis()` and activate the package's repository in your Travis account; then, add, commit, and push your changes in Github; then, include the Travis badge into the README file.
