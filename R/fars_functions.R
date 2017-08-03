@@ -168,3 +168,6 @@ fars_map_state <- function(state.num, year) {
                 graphics::points(LONGITUD, LATITUDE, pch = 46)
         })
 }
+
+# To get aroud of "no visible binding for global variable [variable name]" see "https://stackoverflow.com/a/17807914"
+if(getRversion() >= "2.15.1")  utils::globalVariables(c("MONTH", "STATE", "n", "year"))

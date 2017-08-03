@@ -6,3 +6,4 @@
 ^logo\.png$
 ^.*\.Rproj$
 ^\.Rproj\.user$
+^\.travis\.yml$
