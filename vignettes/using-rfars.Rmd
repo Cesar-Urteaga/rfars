@@ -23,7 +23,7 @@ knitr::opts_knit$set(root.dir = WD)
 library(rfars)
 ```
 
-This vignettes documents what is the `rfars` package and how should be used.
+This vignette describes what is the `rfars` package and how should be used.
 
 ## Description
 
@@ -35,8 +35,8 @@ The `rfars` package bundles a set of functions to analyze the data from the US N
 
 The function `fars_read` allows you to extract the data from a compressed format (`.bz2`) into a tibble object.  
 
-```{r ExtractFarsData}
-# Extract the data from the compressed file.
+```{r}
+# Extracts the data from a compressed file.
 library(rfars)
 data_2013 <- fars_read("accident_2013.csv.bz2")
 head(data_2013)
@@ -44,10 +44,10 @@ head(data_2013)
 
 ### Summarizing the car fatalities
 
-In order to get the total number of fatalities by month use the `fars_summarize_years`.
+In order to get the total number of fatalities by month, use the `fars_summarize_years` function.
 
 ```{r}
-# Creates a table by month & year with the number of fatalities in 2013 y 2014.
+# Creates a table by month & year with the total number of fatalities in 2013 y 2014.
 fars_summarize_years(c(2013, 2014))
 ```
 
