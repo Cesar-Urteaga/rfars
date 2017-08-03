@@ -51,7 +51,7 @@ In order to create this package, I followed the next steps:
 2. Fill the [DESCRIPTION](DESCRIPTION) file with the information of your package.
 3. Document the code in the [R](./R) folder using roxygen2-style documentation.
 4. Delete the [NAMESPACE](NAMESPACE) file when you create the package's project and allow that `devtools` creates this file with the function `document()`.
-5. If you want to create an Rmarkdown vignette, use the function `devtools::use_vignette("vignette-name")`; then, modify the vignette and press Ctrl/Cmd + Shift + K to knit it.
+5. If you want to create an [Rmarkdown vignette](./vignettes/using-rfars.Rmd), use the function `devtools::use_vignette("vignette-name")`; then, modify the vignette and press Ctrl/Cmd + Shift + K to knit it.
 6. You can distribute the documentation in pdf format executing the command `R CMD Rd2pdf package_name` in the parent folder of the package.
 7. In case you want to include external data (e.g., `.bz2` files), you should store them in the [inst\\extdata](./inst/extdata) folder (please refer to the section of [raw data](http://r-pkgs.had.co.nz/data.html#data-extdata) of the book "R packages" by *Hadley Wickham*); moreover, use the function `system.file` to know where the external files are stored once the package is installed (see the examples in the documentation).
 8. So as to include a battery of test, run the command `devtools::use_testthat()` and include the tests in the [testthat](./tests/testthat) folder.  Once you have added the tests, execute `devtools::test()` to perform each one.  Please review the chapter of [testing](http://r-pkgs.had.co.nz/tests.html) in the Hadley's book. 
