@@ -10,7 +10,7 @@ rfars <img src="man/figures/logo.png" align="right" width="120"/>
 Overview
 --------
 
-rfars is package with a set of functions that makes easier to analyze the data from the US National Highway Traffic Safety Administration's [Fatality Analysis Reporting System (FARS)](https://www.nhtsa.gov/research-data/fatality-analysis-reporting-system-fars).
+rfars is a package with a set of functions that makes easier to analyze the data from the US National Highway Traffic Safety Administration's [Fatality Analysis Reporting System (FARS)](https://www.nhtsa.gov/research-data/fatality-analysis-reporting-system-fars).
 
 Installation
 ------------
