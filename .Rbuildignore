@@ -1,5 +1,5 @@
 # Author            : Cesar R. Urteaga Reyesvera.
-# Creation date     : July 26, 2017.
+# Creation date     : August 3, 2017.
 
 ^README\.Rmd$
 ^README-.*\.png$
