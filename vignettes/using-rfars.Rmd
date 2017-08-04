@@ -1,7 +1,7 @@
 ---
 title: "Introduction to the rfars package"
 author: "Cesar R. Urteaga-Reyesvera"
-date: "`r Sys.Date()`"
+date: "2017-08-03"
 output: rmarkdown::html_vignette
 vignette: >
   %\VignetteIndexEntry{Introduction to the rfars package}
