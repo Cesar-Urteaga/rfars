@@ -1,3 +1,4 @@
+# File to run the battery of tests.
 library(testthat)
 library(rfars)
 
