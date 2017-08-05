@@ -10,7 +10,7 @@ rfars <img src="man/figures/logo.png" align="right" width="120"/>
 Overview
 --------
 
-rfars is an R package with a set of functions that makes easier to analyze the data from the US National Highway Traffic Safety Administration's [Fatality Analysis Reporting System (FARS)](https://www.nhtsa.gov/research-data/fatality-analysis-reporting-system-fars).
+rfars is an [R](https://www.r-project.org/) package with a set of functions that makes easier to analyze the data from the US National Highway Traffic Safety Administration's [Fatality Analysis Reporting System (FARS)](https://www.nhtsa.gov/research-data/fatality-analysis-reporting-system-fars).
 
 Installation
 ------------
@@ -80,7 +80,7 @@ attached base packages:
 
 loaded via a namespace (and not attached):
  [1] compiler_3.4.1  backports_1.1.0 magrittr_1.5    rprojroot_1.2  
- [5] tools_3.4.1     htmltools_0.3.6 yaml_2.1.14     Rcpp_0.12.11   
+ [5] tools_3.4.1     htmltools_0.3.6 yaml_2.1.14     Rcpp_0.12.12   
  [9] stringi_1.1.5   rmarkdown_1.6   knitr_1.16      stringr_1.2.0  
 [13] digest_0.6.12   evaluate_0.10.1
 ```
