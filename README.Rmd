@@ -34,7 +34,7 @@ devtools::install_github("Cesar-Urteaga/rfars", build_vignettes = TRUE)
 
 ## Purpose
 
-The aim of this project was to **mingle the skills of creating, writing, and testing an R package**, using the R files provided in the course [Building R Packages](https://www.coursera.org/learn/r-packages) offered by the Johns Hopkins University through the Coursera's platform.
+The aim of this project was to **combine the skills of creating, writing, and testing an R package**, using the R files provided in the course [Building R Packages](https://www.coursera.org/learn/r-packages) offered by the Johns Hopkins University through the Coursera's platform.
 
 For this assessment, it was required to perform the following tasks:
 
