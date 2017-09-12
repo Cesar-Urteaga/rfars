@@ -23,7 +23,7 @@ knitr::opts_knit$set(root.dir = WD)
 library(rfars)
 ```
 
-This vignette describes what is the `rfars` package and how should be used.
+This vignette describes what is the `rfars` package and how it should be used.
 
 ## Description
 
