@@ -2,3 +2,9 @@
 language: R
 sudo: false
 cache: packages
+
+r_github_packages:
+  - codecov/rfars
+
+after_success:
+  - Rscript -e 'library(covr); codecov()'

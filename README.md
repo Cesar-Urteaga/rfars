@@ -5,7 +5,7 @@
 rfars <img src="man/figures/logo.png" align="right" width="120"/>
 =================================================================
 
-[![Travis Build Status](https://travis-ci.org/Cesar-Urteaga/rfars.svg?branch=master)](https://travis-ci.org/Cesar-Urteaga/rfars) [![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/Cesar-Urteaga/rfars?branch=master&svg=true)](https://ci.appveyor.com/project/Cesar-Urteaga/rfars)
+[![Travis Build Status](https://travis-ci.org/Cesar-Urteaga/rfars.svg?branch=master)](https://travis-ci.org/Cesar-Urteaga/rfars) [![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/Cesar-Urteaga/rfars?branch=master&svg=true)](https://ci.appveyor.com/project/Cesar-Urteaga/rfars) [![codecov](https://codecov.io/gh/Cesar-Urteaga/rfars/branch/master/graph/badge.svg)](https://codecov.io/gh/Cesar-Urteaga/rfars)
 
 Overview
 --------
@@ -55,6 +55,7 @@ In order to create this package, I followed this path:
 12. To check if your package pass the CRAN's battery of tests, click the `Check` button in the `Build` tab of `RStudio`. N.B.: It is possible that you could get the following note: "no visible binding for global variable variable-name". To get around of it, see the [suggested solution](https://stackoverflow.com/a/17807914) in stackoverflow.
 13. Finally, you can include the continuous integration service of [Travis](https://travis-ci.org/) to your package by running the `devtools::use_travis()` command and activating the package's repository in your Travis account; thereupon, add, commit, and push your changes in Github and insert the Travis badge into the README file. N.B.: For the [AppVeyor](https://www.appveyor.com/) service use `devtools::use_appveyor()` and check the [AppVeyor's documentation](https://www.appveyor.com/docs/status-badges/#badges-for-projects-with-public-repositories-on-github-and-bitbucket) to add the badge into the README file.
 14. Optional: In case you desire to include the LICENSE file into the Github's repository, you may want to see [this post](https://stackoverflow.com/a/37895659) in Stackoverflow. **N.B.: Please, do not forget to include the reference of the LICENSE file into the DESCRIPTION archive** (e.g., `License: GPL-3 | file LICENSE`).
+15. Optional: In order to include [code coverage](https://en.wikipedia.org/wiki/Code_coverage) to the package using [codecov](https://codecov.io), you must need to add the package's repository to this service, include [this code](https://github.com/Cesar-Urteaga/rnoaa/blob/master/.travis.yml) in the [.travis/yml](.travis.yml) file (change the package's name), and execute the command `covr::codecov(token = "YOUR_TOKEN_GOES_HERE")` with the ascribed token. N.B.: Do not forget to include the `codecov` badge into the README file.
 
 R session
 ---------
